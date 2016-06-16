@@ -99,7 +99,7 @@ let expr_const str = match str with
 (* ---------------------------------- *)
 
 let listContains lst e =
-  List.exists (fun x -> match x with x when x=e -> true | _ -> false) lst;;
+  List.exists (fun x -> x = e) lst;;
 
 let findChildren children names =
   let rec _findChildren children = match children with
